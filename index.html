@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/20220409.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+    <section class="sidebar sidebar-Toggle">
+        <div class="sidebar-wrapper">
+
+            <div class="mini-menu">
+                <div class="menu login-menu">
+                    <span class="menu-item"><a href="#">로그인</a></span>
+                    <span class="menu-item"><a href="#">매장찾기</a></span>
+                    <span class="menu-item"><a href="#">고객의 소리</a></span>
+
+                </div>
+                <div class="menu icon-menu">
+                    <span class="menu-item-icon"><a href="#"><img src="images/nav_iconBlog.jpg" alt=""></a></span>
+                    <span class="menu-item-icon"><a href="#"><img src="images/nav_CameraBlog.jpg" alt=""></a></span>
+                    <span class="menu-item-icon"><a href="#"><img src="images/nav_FACEBOOK.jpg" alt=""></a></span>
+                    <span class="menu-item-icon"><a href="#"><img src="images/nav_PLAY.jpg" alt=""></a></span>
+                </div>
+            </div>
+
+            <div class="main-menu">
+                <ul class="main-menu-list">
+                    <li class="main-menu-item">
+                        <div class="main-item-wrapper">
+                            <div class="main-item-subtitle">메뉴</div>
+                            <div class="main-item-toggle" onclick="sidebarSubmenuToggle(this)"><img src="images/hamarrow.png" alt=""></div>
+                        </div>
+                        <ul class="main-menu-sub-list">
+
+                            <li class="main-menu-sub-item"><a href="">리스트</a></li>
+                            <li class="main-menu-sub-item"><a href="">리스트</a></li>
+                            <li class="main-menu-sub-item"><a href="">리스트</a></li>
+                            <li class="main-menu-sub-item"><a href="">리스트</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <div class="main-item-wrapper">
+                            <div class="main-item-subtitle">이디야멤버스</div>
+                            <div class="main-item-toggle" onclick="sidebarSubmenuToggle(this)"><img src="images/hamarrow.png" alt=""></div>
+                        </div>
+                        <ul class="main-menu-sub-list">
+
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <div class="main-item-wrapper">
+                            <div class="main-item-subtitle">이디야커피랩</div>
+                            <div class="main-item-toggle" onclick="sidebarSubmenuToggle(this)"><img src="images/hamarrow.png" alt=""></div>
+                        </div>
+                        <ul class="main-menu-sub-list">
+
+                            <li class="main-menu-sub-item"> <a href="">리스트</a> </li>
+
+                            <li class="main-menu-sub-item"> <a href="">리스트</a> </li>
+                            <li class="main-menu-sub-item"> <a href="">리스트</a> </li>
+                            <li class="main-menu-sub-item"> <a href="">리스트</a> </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <div class="main-item-wrapper">
+                            <div class="main-item-subtitle">이디야컬처랩</div>
+                            <div class="main-item-toggle" onclick="sidebarSubmenuToggle(this)"><img src="images/hamarrow.png" alt=""></div>
+                        </div>
+                        <ul class="main-menu-sub-list">
+
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+                            <li class="main-menu-sub-item"><a href=""> 리스트</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <div class="main-item-wrapper">
+                            <div class="main-item-subtitle">공지사항</div>
+                            <div class="main-item-toggle" onclick="sidebarSubmenuToggle(this)"><img src="images/hamarrow.png" alt=""></div>
+                        </div>
+                        <ul class="main-menu-sub-list">
+
+                            <li class="main-menu-sub-item"><a href="">리스트</a> </li>
+
+                            <li class="main-menu-sub-item"><a href="">리스트</a> </li>
+                            <li class="main-menu-sub-item"><a href="">리스트</a> </li>
+                            <li class="main-menu-sub-item"><a href="">리스트</a> </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="language-menu">
+                <div class="cell lang">
+                    <div class="lang-selected" onclick="selectLang(this)">
+                        <a href="#">Korean</a>
+
+                    </div>
+                    <ul class="lang-list">
+                        <li><a href="#">Korean</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-toggle" onclick="sidebarToggle()">×</div>
+    </section>
+
+
+    <!--top-bar-->
+
+    <div class="con row top-bar">
+        <ul class="row cell site-menu menu-1">
+            <li class="cell"><a href="#">브랜드 사이트</a></li>
+            <li class="cell"><a href="https://www.ediya.com/C/">기업 사이트</a></li>
+            <li class="cell"><a href="창업안내.html">창업안내</a></li>
+            <li class="cell"><a href="#">채용안내</a></li>
+        </ul>
+        <ul class="row cell-right">
+            <li class="cell">
+                <ul class="row site-menu menu-2">
+                    <li class="cell"><a href="login.html">로그인</a></li>
+                    <li class="cell"><a href="map.html">매장찾기</a></li>
+                    <li class="cell"><a href="#">고객의 소리</a></li>
+                    <li class="cell"><a href="#">이디야 공식몰</a></li>
+
+                    <li class="cell"><a href="#">모바일상품권스토어</a></li>
+
+
+                </ul>
+            </li>
+            <li class="cell sns-ico">
+                <ul class="row">
+                    <li class="cell"><a href="#"><img src="images/nav_iconBlog.jpg" alt=""></a></li>
+                    <li class="cell"><a href="#"><img src="images/nav_CameraBlog.jpg" alt=""></a></li>
+                    <li class="cell"><a href="#"><img src="images/nav_FACEBOOK.jpg" alt=""></a></li>
+                    <li class="cell"><a href="#"><img src="images/nav_PLAY.jpg" alt=""></a></li>
+                </ul>
+            </li>
+            <li class="cell lang">
+                <a href="#">Korean</a>
+                <ul>
+                    <li><a href="#">Korean</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Chinese</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--menu-bar-->
+    <div class="menu-bar">
+        <div class="con row">
+            <div class="img-box cell logo"><img src="https://ediya.com/images/common/top_logo.gif" alt=""></div>
+
+            <div class="menu-1 cell">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#"><span>메뉴</span></a>
+                        <ul>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">푸드</a></li>
+                            <li><a href="#">MD</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#"><span>이디야멤버스</span></a>
+                        <ul>
+                            <li><a href="#">멤버스소개</a></li>
+                            <li><a href="#">이디야카드</a></li>
+                            <li><a href="#">선물하기</a></li>
+                            <li><a href="#">이디야오더</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#"><span>이디야컬쳐랩</span></a>
+                        <ul>
+                            <li><a href="#">이디야 뮤직 페스타</a></li>
+                            <li><a href="#">시설대관</a></li>
+                            <li><a href="#">이디야 컬처랩</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#"><span>상품권</span></a>
+                        <ul>
+                            <li><a href="#">기프트카드</a></li>
+                            <li><a href="#">모바일상푼권</a></li>
+                            <li><a href="#">단체/기업구매</a></li>
+                    
+                        </ul>
+                    </li>
+                    <li class="cell">
+                        <a href="#"><span>공지사항</span></a>
+                        <ul>
+                            <li><a href="#">이디야소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">홈카페레시피</a></li>
+                            <li><a href="#">이디야유튜브</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-sidebar-toggle" onclick="sidebarToggle()"><span><img src="images/hambtn.gif" alt=""></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--이미지 슬라이더-->
+    <div class="my-1 owl-carousel owl-theme">
+        <div class="item"><img src="images/Mainslide_3.jpg" alt=""></div>
+        <div class="item"><img src="images/Mainslide_1.jpg" alt=""></div>
+        <div class="item"><img src="images/Mainslide_2.jpg" alt=""></div>
+        <div class="item"><img src="images/Mainslide_4.jpg" alt=""></div>
+
+    </div>
+
+
+
+    <!-- 메인 배너-1 -->
+
+
+    <div class="main-bn-1 con-min-width">
+
+        <div class="con des-1">
+
+            <ul class="toptext">
+                <li class="ediya_card"> <span class="ediya_font">EDIYA COFFEE</span> <span>기프트카드</span></li>
+                <div class="flip-3d">
+                    <figure>
+                        <img src="images/card2.png" alt>
+
+                    </figure>
+                </div>
+
+            </ul>
+            <ul class="lnb">
+                <li><a href="#">기프트카드</a></li>
+                <li><a href="#">모바일상품권</a></li>
+                <li><a href="#">단체/기업구매</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 메인 배너-2 -->
+    <div class="main-bn-2 con-min-width">
+        <div class="con des-2">
+            <div class="toptext">
+                <li class="ediya-menu"><span class="ediya_normal">ALWAYS BESIDE YOU, </span> <span
+                        class="ediya_font">EDIYA COFFEE</span></li>
+                <li></li>
+            </div>
+            <div class="midtext">
+                <span>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</span>
+                <a href="#">메뉴보기</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 지우고 다른거 넣어야함 -->
+    <!-- 메인 배너-3 -->
+    <div class="main-bn-3 con-min-width">
+        <div class="con des-3">
+            <ul class="top">
+          <li>EDIYA CULTURE LAB</li>
+                <p>커피를 더 특별하게 만드는 문화가 시작되는 공간</p>
+                <li></li>
+            </ul>
+        </div>
+        <div class="icon-menu">
+            <ul class="row">
+                <li class="cell"><a href="#"><span>이디야 뮤직 페스타</span></a></li>
+                <li class="cell"><a href="#"><span>컬쳐랩 시설대관</span></a></li>
+                <li class="cell"><a href="#"><span>이디야 컬쳐랩</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper innerBox">
+        <h2 class="main_title">
+            <span class="tit_2"><img src="images/LOGO.gif" alt=""></span>
+        </h2>
+        <div class="carousel">
+            <div><img src="images/PC_B_연출샷_48.jpg" alt="">
+                <p class="itemtext">
+                    2022 03 EDIYA Poop Bag
+                </p>
+            </div>
+            <div><img src="images/PC_B_연출샷_50.jpg" alt="">
+                <p class="itemtext">
+                    2022 03 EDIYA Poop Bag
+                </p>
+            </div>
+            <div><img src="images/PC_B_연출샷_30.jpg" alt="">
+                <p class="itemtext">
+                    2022 03 EDIYA Poop Bag
+                </p>
+            </div>
+            <div><img src="images/PC_B_연출샷_50.jpg" alt="">
+                <p class="itemtext">
+                    2022 03 EDIYA Poop Bag
+                </p>
+            </div>
+
+            <div><img src="images/PC_B_연출샷_51.jpg" alt="">
+                <p class="itemtext">
+
+                    2022 03 EDIYA Poop Bag
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 메인 bottom -->
+    <div class="main-bottom con-min-width">
+        <div class="con main-bottom-menu">
+
+            <ul class="row">
+                <li class="cell menu-1">
+                    <a href="#"></a>
+                    <div class="des">
+                        <div class="des-1">가맹점 개설 안내</div>
+                        <div class="des-2">성공 창업을 위한 선택</div>
+                    </div>
+                </li>
+                <li class="cell menu-2">
+                    <a href="#"></a>
+                    <div class="des">
+                        <div class="des-1">매장찾기</div>
+                        <div class="des-2">가까운 이디야 매장을<br>확인해보세요.</div>
+                        <form action="#" class="search">
+                            <input type="text" placeholder="FIND A STORE">
+                            <a href="#">
+                                <img src="https://ediya.com/images/main/main_store_btn.png" alt="">
+                            </a>
+                        </form>
+                    </div>
+                </li>
+                <li class="cell menu-3">
+                    <ul class="news">
+                        <li class="News news-1">
+                            <div class="news-header">
+                                <div class="news-cell">이디야 소식</div>
+                                <div class="news-cell-right more-btn"><a href="#"><img
+                                            src="https://www.ediya.com/images/main/main_news_more.png" alt=""></a></div>
+                            </div>
+
+
+                            <ul class="list">
+                                <li><a href="#">※10월 행복愛우체통 이벤트 당첨자 발표※<span class="cell-right">2018.11.09</span></a>
+                                </li>
+                                <li><a href="#">서버 보안 강화로 인한 홈페이지 이용 제한 안내<span class="cell-right">2018.06.11</span></a>
+                                </li>
+                                <li><a href="#">이디야멤버스 App 설치 및 이용 불가 OS버전 안내<span
+                                            class="cell-right">2017.12.15</span></a></li>
+                            </ul>
+
+                        </li>
+                        <li class="news-2">
+                            <div class="brochure">
+                                <a href="#"></a>
+                                <div>브로슈어 다운받기</div>
+                                <img src="https://www.ediya.com/images/main/main_brochure_img.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 메인 SNS -->
+    <div class="con main-sns con-min-width">
+        <div class="des">
+            <div>EDIYA COFFEE SNS</div>
+            <div></div>
+            <div>Coffee moment with EDIYA</div>
+        </div>
+
+        <div class="sns-list">
+            <ul class="row">
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns1.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns2.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box"><img src="images/sns3.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns4.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns5.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns6.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns7.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box"><img src="images/sns8.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns9.jpg" alt="">
+                        </span></a></li>
+                <li class="cell"><a href="#"><span class="img-box">
+                            <img src="images/sns10.jpg" alt="">
+                        </span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer con-min-width">
+        <div class="list-1">
+            <ul class="row">
+                <li class="cell"><a href="#">개인정보처리방침</a></li>
+                <li class="cell"><a href="#">멤버스 이용약관</a></li>
+                <li class="cell"><a href="#">가맹 안내</a></li>
+                <li class="cell"><a href="#">Site map</a></li>
+                <li class="cell"><a href="#">점주의 방</a></li>
+            </ul>
+        </div>
+        <div class="list-2">
+            <div class="bottom-logo"><img src="https://www.ediya.com/images/common/bottom_logo.gif" alt=""></div>
+            <div class="copy-info">
+                <div class="list-1">
+                    <ul class="row">
+                        <li class="cell">서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</li>
+                        <li class="cell">TEL : 02-543-6467</li>
+                        <li class="cell">FAX : 02-543-7191</li>
+                    </ul>
+                </div>
+                <div class="list-2">
+                    <ul class="row">
+                        <li class="cell">사업자등록번호 : 107-86-16302</li>
+                        <li class="cell">통신판매업 신고 : 강남 제 002519호</li>
+                        <li class="cell">대표이사 : 문창기</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</div>
+    </div>
+    <!-- 퀵메뉴-왼쪽 -->
+    <div class="quick-left">
+        <ul>
+            <li><a href="#"><img src="images/퀵메뉴.png" style="width: 200px;" alt=""></a></li>
+        </ul>
+    </div>
+
+    <script>
+        //1. 스크롤다운시 메뉴바 상단에 붙이기//
+        var $window = $(window);
+
+        $window.scroll(function () {
+            if ($window.scrollTop() > 0) {
+                $('body').addClass('no-scroll-top-0')
+            }
+            else {
+                $('body').removeClass('no-scroll-top-0');
+            }
+        });
+
+
+        //2 나브 드롭다운
+        $('.top-bar .lang a ').click(function () {
+            if ($('.top-bar .lang').hasClass('active')) {
+                $('.top-bar .lang').removeClass('active');
+            }
+            else {
+                $('.top-bar .lang').addClass('active');
+            }
+        });
+
+
+        //3.메뉴바에 hover하면 2차메뉴 풀다운되고 border-bottom 줄 생기기//
+        $('.menu-bar .menu-1').mouseenter(function () {
+            $('.menu-bar').addClass('menu-1-active');
+        });
+
+        $('.menu-bar').mouseleave(function () {
+            $(this).removeClass('menu-1-active');
+        });
+
+        $('.menu-bar .logo').mouseenter(function () {
+            $('.menu-bar').removeClass('menu-1-active');
+        });
+
+
+        //4.메인슬라이더//
+        $('.my-1').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            loop: true,
+            margin: 0,
+            nav: true,
+            //좌우화살표 아이콘
+            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        });
+
+
+
+
+
+        function ActiveOnVisible__checkAndActive() {
+            $('.active-on-visible:not(.active)').each(function (index, node) {
+                var $node = $(node);
+
+                var offsetTop = $node.attr('data-active-on-visible-offsetTop') * 1;
+                var diffY = parseInt($node.attr('data-active-on-visible-diff-y'));
+                var delay = parseInt($node.attr('data-active-on-visible-delay'));
+
+                if ($(window).scrollTop() + $(window).height() + diffY > offsetTop) {
+                    setTimeout(function () {
+                        $node.addClass('active');
+                    }, delay);
+                }
+            });
+        }
+        $(document).ready(function () {
+            $('.carousel').slick({
+                slidesToShow: 3,
+
+                autoplay: true,
+
+                autoplayTimeout: 1000,
+                loop: true,
+
+
+                dots: true,
+                nav: true,
+                // centerMode: true, //양쪽짤리게 센터모드
+                responsive: [ // 반응형 웹 구현 옵션
+                    {
+                        breakpoint: 960, //화면 사이즈 960px
+                        settings: {
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768, //화면 사이즈 768px
+                        settings: {
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+
+            });
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

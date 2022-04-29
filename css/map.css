@@ -1,0 +1,51 @@
+
+.boxlist{
+display: flex;
+ position: absolute;
+ top: 43%;
+ left: 50%;
+ transform: translateX(-50%);
+
+
+}
+.boxlist{
+font-size: 13px;
+height: 37px;
+line-height: 37px;
+color: #202023;
+opacity: 0.7;
+text-align: center;
+}
+.boxlist li:hover{
+    background: #84847c;
+    border: solid 1px #84847c;
+    opacity: 1;
+    font-weight: 500;
+}
+.boxlist li:hover a{
+    color: #fff;
+}
+
+.boxlist li{    
+   text-align: center;
+    width: 150px;
+    color: #202023;
+
+    height: 37px;
+    text-align: center;
+    border: solid 1px #98989e;
+    box-sizing: border-box;
+
+}
+.textbox{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 48px;
+    font-weight: 400;
+margin-bottom: 20px;
+}
